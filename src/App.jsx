@@ -1,8 +1,7 @@
-
 import './App.css'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
-import HomeBlog from './Components/HomeBlog'
+import Home from './pages/Home'
 
 function App() {
   
@@ -10,7 +9,7 @@ function App() {
   return (
     <>
     <Header/>
-    <HomeBlog/>
+    <Home/>
     <Footer/>
     </>
   )

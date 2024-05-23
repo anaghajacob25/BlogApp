@@ -52,7 +52,7 @@ function Footer() {
         <div className="d-flex flex-column justify-content-center text-center">
           Breathe by Tammy Gallaway
           <br />
-          Mail: sajith@gmail.com
+          Mail: blogit@gmail.com
           <br />
           Phone number: 123-456-7890
           <div className="icons mt-3 d-flex justify-content-between fs-5">
@@ -105,7 +105,7 @@ function Footer() {
         style={{ width: "400px", height: "50px" }}
         className="w-100 d-flex justify-content-center align-items-end text-center "
       >
-        <p>© 2023 by Sajith Kumar. Powered Blog App</p>
+        <p>© 2023 by Blogit. Powered Blog App</p>
       </div>
     </div>
   );
