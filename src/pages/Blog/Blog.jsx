@@ -4,7 +4,7 @@ import Search from '../../Components/search/Search';
  import Category from '../../Components/Category/Category';
 import LatestBlog from '../../Components/LatestBlog/LatestBlog';
 import Pagination from '../../Components/Pagination/Pagination'; 
-
+import OneBlog from '../../Components/singleblog/OneBlog'; 
 function Blog() {
   
   return (
