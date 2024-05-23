@@ -1,4 +1,3 @@
-import React from 'react'
 import './HomeContent.css'
 import Carousel from 'react-bootstrap/Carousel';
 import carouselFashion from '../../images/fashion.jpeg'
@@ -8,6 +7,8 @@ import food from '../../images/food.jpeg'
 import { Link } from 'react-router-dom';
 import {Parallax} from 'react-parallax'
 import sea2Image from '../../images/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function HomeContent() {
   return (
@@ -38,9 +39,9 @@ function HomeContent() {
  
   
       <div style={{width:'20px',height:'150px'}} className='icons fs-5 d-flex justify-content-between align-items-center'>
-      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-facebook"></i></Link>
-      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-twitter"></i></Link>
-      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-instagram"></i></Link>
+      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faFacebook} /></Link>
+      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faTwitter} /></Link>
+      <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faInstagram} /></Link>
 
 
 

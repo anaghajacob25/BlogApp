@@ -1,6 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { MDBIcon } from "mdb-react-ui-kit";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faFacebook, faWhatsapp, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope  } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
@@ -61,42 +63,42 @@ function Footer() {
               to={"https://react-bootstrap.netlify.app/"}
               style={{ textDecoration: "none" }}
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Link>
             <Link
               className="text-dark"
               to={"https://getbootstrap.com/"}
               style={{ textDecoration: "none" }}
             >
-              <i class="fa-brands fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} />
+            </Link>
+             <Link
+              className="text-dark"
+              to={"https://fontawesome.com/"}
+              style={{ textDecoration: "none" }}
+            >
+               <FontAwesomeIcon icon={faEnvelope} />
+            </Link> 
+            <Link
+              className="text-dark"
+              to={"https://fontawesome.com/"}
+              style={{ textDecoration: "none" }}
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
             </Link>
             <Link
               className="text-dark"
               to={"https://fontawesome.com/"}
               style={{ textDecoration: "none" }}
             >
-              <i class="fa-solid fa-envelope"></i>
+               <FontAwesomeIcon icon={faGithub} />
             </Link>
             <Link
               className="text-dark"
               to={"https://fontawesome.com/"}
               style={{ textDecoration: "none" }}
             >
-              <i class="fa-brands fa-whatsapp"></i>
-            </Link>
-            <Link
-              className="text-dark"
-              to={"https://fontawesome.com/"}
-              style={{ textDecoration: "none" }}
-            >
-              <i class="fa-brands fa-github"></i>
-            </Link>
-            <Link
-              className="text-dark"
-              to={"https://fontawesome.com/"}
-              style={{ textDecoration: "none" }}
-            >
-              <i class="fa-brands fa-instagram"></i>
+               <FontAwesomeIcon icon={faInstagram} />
             </Link>
           </div>
         </div>
