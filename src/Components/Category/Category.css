@@ -1,0 +1,44 @@
+
+
+.category{
+    margin-top: 20px;
+    
+}
+
+.category_item{
+    padding: .5rem;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.category_item .item{
+    background: linear-gradient(to right, #37978f, #acdcd3);
+   color: #ffffff;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    
+}
+
+
+
+
+
+
+
+@media (max-width:778px){
+    .category_item .item{
+        padding: .3rem .5rem;
+        font-size: 12px;
+    }
+    .category_item{
+        gap: .5rem;
+        padding: 2rem;
+       
+
+    }
+}
+
+
+

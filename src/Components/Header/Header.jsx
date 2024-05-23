@@ -1,12 +1,11 @@
-import React from 'react'
-import {Nav,Navbar,Container,Badge} from 'react-bootstrap'
+import {Nav,Navbar,Container} from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { MDBIcon } from 'mdb-react-ui-kit';
 import './Header.css'
 
 
 function Header() {
-
+  const navigate = useNavigate()
   return (
     <Navbar expand="lg" className="navbar shadow-0 position-fixed top-0 w-100 mb-5 bg-body">
     <Container>
@@ -17,8 +16,8 @@ function Header() {
       
         <Nav style={{width:'400px'}} className="nav ms-auto  d-flex justify-content-evenly align-items-center">
          <Nav.Link  href='#home'   >Home</Nav.Link>
-            <Nav.Link >Blog</Nav.Link>
-            <Nav.Link >New Blog</Nav.Link>
+            <Nav.Link onClick={()=>navigate("/blogs")}>Blog</Nav.Link>
+            <Nav.Link onClick={()=>navigate("/edit-blog")}>New Blog</Nav.Link>
             <Nav.Link href='#footer'>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
